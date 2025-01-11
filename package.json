@@ -1,0 +1,43 @@
+{
+  "name": "rai-chat-desktop",
+  "productName": "Rai Chat Desktop",
+  "author": "Rai",
+  "version": "1.1.0",
+  "description": "A desktop version of Rai Chat.",
+  "main": "dist/main.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "run-p build:main",
+    "build:main": "tsc -p tsconfig.json",
+    "start": "run-p build:main start:electron",
+    "start:electron": "electron-forge start",
+    "package": "run-p build:main package:electron",
+    "package:electron": "electron-forge package",
+    "make": "run-p build:main make:electron",
+    "make:electron": "electron-forge make"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.6.0",
+    "@electron-forge/maker-deb": "^7.6.0",
+    "@electron-forge/maker-rpm": "^7.6.0",
+    "@electron-forge/maker-squirrel": "^7.6.0",
+    "@electron-forge/maker-zip": "^7.6.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.6.0",
+    "@electron-forge/plugin-fuses": "^7.6.0",
+    "@electron/fuses": "^1.8.0",
+    "@parcel/transformer-typescript-tsc": "^2.13.3",
+    "@types/node": "^22.10.5",
+    "custom-electron-titlebar": "^4.2.8",
+    "electron": "^33.3.1",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.13.3",
+    "typescript": "^5.7.3",
+    "update-electron-app": "^3.1.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "electron-squirrel-startup": "^1.0.1",
+    "fs": "0.0.1-security"
+  },
+  "packageManager": "yarn@4.6.0"
+}
