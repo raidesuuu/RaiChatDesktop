@@ -12,7 +12,7 @@ module.exports = {
     {
       name: '@electron-forge/maker-squirrel',
       config: {
-        iconUrl: "https://raw.githubusercontent.com/UpLauncher/FiicenElectron/master/images/icon.ico",
+        iconUrl: "https://raw.githubusercontent.com/raidesuuu/RaiChatDesktop/master/images/icon.ico",
         setupIcon: "images/icon.ico",
         loadingGif: "images/ready.gif"
       },
