@@ -5,6 +5,7 @@ on:
     paths:
       - src/**
       - .github/workflows/release.yml
+      - forge.config.js
 jobs:
   linux:
     name: "Build & Upload Linux"

@@ -5,7 +5,7 @@ module.exports = {
   packagerConfig: {
     asar: true,
     icon: "images/icon",
-    executableName: "fiicen-desktop"
+    executableName: "rai-chat-desktop"
   },
   rebuildConfig: {},
   makers: [
