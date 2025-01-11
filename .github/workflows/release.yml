@@ -15,9 +15,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "yarn"
-      - name: "Install yarn"
-        run: npm install -g yarn
+      - name: Setup Yarn
+        uses: threeal/setup-yarn-action@v2.0.0
       - name: "Install Packages on yarn"
         run: yarn install
       - name: "Build"
@@ -38,8 +37,8 @@ jobs:
         with:
           node-version: "20"
           cache: "yarn"
-      - name: "Install yarn"
-        run: npm install -g yarn
+      - name: Setup Yarn
+        uses: threeal/setup-yarn-action@v2.0.0
       - name: "Install Packages on yarn"
         run: yarn install
       - name: "Build"
@@ -60,8 +59,8 @@ jobs:
         with:
           node-version: "20"
           cache: "yarn"
-      - name: "Install yarn"
-        run: npm install -g yarn
+      - name: Setup Yarn
+        uses: threeal/setup-yarn-action@v2.0.0
       - name: "Install Packages on yarn"
         run: yarn install
       - name: "Build"
