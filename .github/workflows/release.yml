@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - src/**
+      - .github/workflows/release.yml
 jobs:
   linux:
     name: "Build & Upload Linux"
